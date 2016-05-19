@@ -1,0 +1,77 @@
+$backgroundApp:url(resources/resourcesLogin/componente-14.png);
+
+.appBackground{
+    background-image: $backgroundApp;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contentForm{
+    background-color: rgba(0,0,0,0.1);
+    padding-bottom: 5vh;
+    border-radius: 0.3em;
+}
+
+.item{
+    border-color: rgba(12,12, 12,0.34);
+    padding: 16px;
+    border-width: 0px 0px 1px 0px;
+}
+
+.imgSynergyLogo{
+    height: 6vh;
+    margin-left: 22vw;
+    margin-top: 7vh;
+}
+
+.positionButtons{
+    margin: auto;
+    text-align: center;
+}
+
+.myButtons{
+    background-color: transparent;
+    color:#ffffff;
+    border-color:#dbd3b8;
+    font-weight: bold;
+    width: 55vw;
+}
+
+.myButtons.activated{
+    background-color:#dbd3b8; 
+}
+
+//vainaLoca
+
+/*@-webkit-keyframes slideInBothWays {
+  0% {
+    -webkit-transform: translate3d(-100%,0,0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(50%,0,0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+  }
+}
+*/
+@-webkit-keyframes slideInBothWays {
+  0% {
+    -webkit-transform: translate3d(0,100%,0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0,0,0);
+  }
+}
+
+.slide-in-both-ways {
+   -webkit-animation: slideInBothWays ease-in 1;
+  animation: slideInBothWays ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 750ms;
+  animation-duration: 750ms;
+}

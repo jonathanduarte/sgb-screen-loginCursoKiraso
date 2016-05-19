@@ -1,0 +1,20 @@
+<ion-view mz-screen hide-nav-bar='true' view-title="{{ title | translate }}" class="appBackground">
+    <ion-content class="padding slide-in-both-ways">
+        <div class="contentForm">
+            <img class="imgSynergyLogo" ng-src="{{params.synergyLogo}}">
+            <div class="list padding">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Username</span>
+                    <input type="text" placeholder="First Name" ng-model="login.username" ng-patern="params.usernameValidation">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Password</span>
+                    <input type="text" placeholder="Email" ng-model="login.password" ng-patern="params.passwordValidation">
+                </label>
+            </div>
+            <div class="positionButtons">
+                <button class="button myButtons" ng-click="goTo()">Enviar</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
