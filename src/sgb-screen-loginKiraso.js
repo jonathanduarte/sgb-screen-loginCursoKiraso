@@ -24,7 +24,7 @@ angular.module('sgb-screen-loginKiraso', ['megazord'])
                         title: 'Usuario o Contraseña Invalida',
                         template: 'Al tercer intento errado su clave sera bloqueada',
                         okText: 'Cerrar' && $scope.clearFields(),
-                        okType: 'mybutton',
+                        okType: 'button-calm',
                         cssClass:'animated'
                     })
                 }
